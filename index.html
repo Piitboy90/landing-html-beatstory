@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!-- Le dice al navegador que este documento está escrito en HTML5 -->
+
+<html lang="es">
+<!-- Aquí empieza el documento HTML completo -->
+<!-- lang="es" indica que el idioma principal de la página es español -->
+
+<head>
+  <!-- En head van datos de configuración de la página, no contenido visible -->
+
+  <meta charset="UTF-8">
+  <!-- Permite que se vean bien tildes, eñes y caracteres especiales -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Hace que la web se adapte bien al tamaño de móviles y tablets -->
+
+  <title>BeatStory | Música generada con IA</title>
+  <!-- Este texto aparece en la pestaña del navegador -->
+</head>
+
+<body>
+  <!-- Aquí empieza todo el contenido visible de la página -->
+
+  <header>
+    <!-- Cabecera principal de la página -->
+
+    <nav>
+      <!-- Menú de navegación -->
+
+      <a href="#hero">BeatStory</a>
+      <!-- Enlace al inicio de la landing, a la sección hero -->
+
+      <ul>
+        <!-- Lista no ordenada para los elementos del menú -->
+
+        <li><a href="#beneficios">Beneficios</a></li>
+        <!-- Enlace que lleva a la sección beneficios -->
+
+        <li><a href="#como-funciona">Cómo funciona</a></li>
+        <!-- Enlace que lleva a la sección cómo funciona -->
+
+        <li><a href="#contacto">Contacto</a></li>
+        <!-- Enlace que lleva a la sección contacto -->
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Aquí va el contenido principal de la página -->
+
+    <section id="hero">
+      <!-- Primera sección importante de la landing -->
+      <!-- id="hero" permite enlazarla desde el menú -->
+
+      <h1>Música generada con IA para expresar lo que sientes</h1>
+      <!-- Título principal de toda la página -->
+      <!-- Solo debe haber un h1 por página -->
+
+      <p>
+        En BeatStory transformamos tus vivencias, emociones e ideas en canciones
+        personalizadas con ayuda de inteligencia artificial.
+      </p>
+      <!-- Párrafo que explica la propuesta de valor -->
+
+      <a href="#contacto">Cuéntame tu idea</a>
+      <!-- Llamada a la acción: al hacer clic, baja hasta contacto -->
+    </section>
+
+    <section id="beneficios">
+      <!-- Sección donde explicas las ventajas del servicio -->
+
+      <h2>Beneficios</h2>
+      <!-- Título de esta sección -->
+
+      <article>
+        <!-- Primer bloque de contenido independiente dentro de beneficios -->
+
+        <h3>Música personal y única</h3>
+        <!-- Subtítulo del primer beneficio -->
+
+        <p>
+          Cada canción se crea a partir de tu historia, tu estado de ánimo
+          y el estilo musical que más conecte contigo.
+        </p>
+        <!-- Explicación del primer beneficio -->
+      </article>
+
+      <article>
+        <!-- Segundo bloque de beneficio -->
+
+        <h3>Expresa emociones de otra manera</h3>
+        <!-- Subtítulo del segundo beneficio -->
+
+        <p>
+          Convierte sentimientos, recuerdos o mensajes importantes en una
+          experiencia musical diferente y especial.
+        </p>
+        <!-- Explicación del segundo beneficio -->
+      </article>
+
+      <article>
+        <!-- Tercer bloque de beneficio -->
+
+        <h3>Proceso rápido y creativo</h3>
+        <!-- Subtítulo del tercer beneficio -->
+
+        <p>
+          Usamos prompting e IA para dar forma a la letra, el estilo y la
+          intención de cada tema de manera ágil.
+        </p>
+        <!-- Explicación del tercer beneficio -->
+      </article>
+    </section>
+
+    <section id="como-funciona">
+      <!-- Sección donde explicas el proceso -->
+
+      <h2>Cómo funciona</h2>
+      <!-- Título de la sección -->
+
+      <p>
+        Primero nos cuentas tu idea, tu emoción o el mensaje que quieres transmitir.
+        Después definimos el estilo musical y la intención lírica. Finalmente,
+        generamos una propuesta musical personalizada con ayuda de herramientas
+        de IA como Suno y una buena ingeniería de prompting.
+      </p>
+      <!-- Explicación general del proceso de trabajo -->
+       
+    </section>
+
+    <section id="contacto">
+      <!-- Sección final para que el usuario contacte -->
+
+      <h2>Contacto</h2>
+      <!-- Título de la sección contacto -->
+
+      <p>
+        Cuéntame tu idea y la convertiremos en una canción con identidad propia.
+      </p>
+      <!-- Texto de apoyo para invitar a escribir -->
+
+      <p>
+        También puedes escribirme directamente a
+        <a href="mailto:petersiteng_90@hotmail.com">petersiteng_90@hotmail.com</a>
+      </p>
+      <!-- Enlace de correo -->
+      <!-- mailto: hace que se abra la aplicación de email del usuario -->
+
+      <form action="#" method="post">
+        <!-- Empieza el formulario -->
+        <!-- action="#" significa que aún no se envía a un servidor real -->
+        <!-- method="post" indica cómo se enviarían los datos -->
+
+        <p>
+          <label for="nombre">Nombre</label><br>
+          <!-- Etiqueta que describe el campo de nombre -->
+          <!-- for="nombre" conecta con el input que tiene id="nombre" -->
+
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+          <!-- Campo para escribir texto -->
+          <!-- id identifica el campo -->
+          <!-- name es el nombre interno del dato -->
+          <!-- placeholder muestra una pista dentro del campo -->
+          <!-- required significa obligatorio -->
+        </p>
+
+        <p>
+          <label for="email">Email</label><br>
+          <!-- Etiqueta para el campo de correo -->
+
+          <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required>
+          <!-- Campo para email -->
+          <!-- type="email" ayuda a validar que tenga formato de correo -->
+        </p>
+
+        <p>
+          <label for="mensaje">Mensaje</label><br>
+          <!-- Etiqueta para el área de mensaje -->
+
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            rows="5"
+            placeholder="Cuéntame qué tipo de canción te gustaría crear"
+            required
+          ></textarea>
+          <!-- Caja de texto grande para escribir mensajes largos -->
+          <!-- rows="5" indica una altura aproximada de 5 líneas -->
+        </p>
+
+        <button type="submit">Enviar mensaje</button>
+        <!-- Botón para enviar el formulario -->
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Pie de página -->
+
+    <p>© 2026 Peter Siteng Tumpap | BeatStory</p>
+    <!-- Texto final con autor y nombre del proyecto -->
+  </footer>
+</body>
+</html>
